@@ -133,7 +133,7 @@ document.addEventListener("DOMContentLoaded", () => {
             chatWindow.style.opacity = "1";
             chatWindow.style.height = "400px";
             expandIcon.style.display = "none"; 
-            #collapseIcon.style.display = "block"; 
+            /collapseIcon.style.display = "block"; 
             isChatWindowMaximized = true;
         } else {
             chatWindow.style.transform = "translateY(100%)";
