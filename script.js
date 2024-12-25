@@ -141,7 +141,7 @@ document.addEventListener("DOMContentLoaded", () => {
             isChatWindowMaximized = false;
             chatWindow.style.height = "100px";
             expandIcon.style.display = "block"; 
-            // collapseIcon.style.display = "none"; 
+            collapseIcon.style.display = "none"; 
         }
     // chatToggle.addEventListener("click", () => {
     //     if (!isChatWindowMaximized) {
