@@ -140,7 +140,7 @@ document.addEventListener("DOMContentLoaded", () => {
             chatWindow.style.opacity = "0";
             isChatWindowMaximized = false;
             chatWindow.style.height = "100px";
-            expandIcon.style.display = "block"; 
+            /expandIcon.style.display = "block"; 
             collapseIcon.style.display = "none"; 
         }
     // chatToggle.addEventListener("click", () => {
