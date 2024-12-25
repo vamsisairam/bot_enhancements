@@ -138,10 +138,10 @@ document.addEventListener("DOMContentLoaded", () => {
         } else {
             chatWindow.style.transform = "translateY(100%)";
             chatWindow.style.opacity = "0";
+            isChatWindowMaximized = false;
             chatWindow.style.height = "100px";
             expandIcon.style.display = "block"; 
             collapseIcon.style.display = "none"; 
-            isChatWindowMaximized = false;
         }
     // chatToggle.addEventListener("click", () => {
     //     if (!isChatWindowMaximized) {
