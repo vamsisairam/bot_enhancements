@@ -125,21 +125,43 @@ document.addEventListener("DOMContentLoaded", () => {
         }, 1500); 
 
     });
+        chatToggle.addEventListener("click", () => {
+        const expandIcon = document.getElementById("chat-toggle-expand");
+        const collapseIcon = document.getElementById("chat-toggle-collapse");
 
-    chatToggle.addEventListener("click", () => {
         if (!isChatWindowMaximized) {
             chatWindow.style.transform = "translateY(0)";
             chatWindow.style.opacity = "1";
-            chatWindow.style.height = "400px"; 
-            chatToggle.textContent = "[-]"; 
-            isChatWindowMaximized = true; 
+            chatWindow.style.height = "400px";
+
+            expandIcon.style.display = "none"; 
+            collapseIcon.style.display = "block"; 
+
+            isChatWindowMaximized = true;
         } else {
             chatWindow.style.transform = "translateY(100%)";
             chatWindow.style.opacity = "0";
-            chatWindow.style.height = "100px"; 
-            chatToggle.textContent = "[+]"; 
-            isChatWindowMaximized = false; 
+            chatWindow.style.height = "100px";
+
+            expandIcon.style.display = "block"; 
+            collapseIcon.style.display = "none"; 
+
+            isChatWindowMaximized = false;
         }
+    // chatToggle.addEventListener("click", () => {
+    //     if (!isChatWindowMaximized) {
+    //         chatWindow.style.transform = "translateY(0)";
+    //         chatWindow.style.opacity = "1";
+    //         chatWindow.style.height = "400px"; 
+    //         chatToggle.textContent = "[-]"; 
+    //         isChatWindowMaximized = true; 
+    //     } else {
+    //         chatWindow.style.transform = "translateY(100%)";
+    //         chatWindow.style.opacity = "0";
+    //         chatWindow.style.height = "100px"; 
+    //         chatToggle.textContent = "[+]"; 
+    //         isChatWindowMaximized = false; 
+    //     }
     });
 
     // Initialize userDetails with an empty object and set initialMessageDisplayed to false
